@@ -8,11 +8,16 @@ pipeline {
             echo 'ramy'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             echo 'test'
           }
         }
+      }
+    }
+    stage('deploy1') {
+      steps {
+        echo 'deploy1'
       }
     }
   }
